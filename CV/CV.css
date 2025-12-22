@@ -1,0 +1,194 @@
+* {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+hr {
+    margin: 20px 0px;
+    border: 1px solid #ccc;
+}
+
+p {
+    margin: 15px 0px;
+}
+
+h2 {
+    margin: 10px 0px;
+    padding: 16px 0px;
+    color: #757575;
+}
+
+h5 {
+    margin: 10px 0px;
+    color: #757575;
+}
+
+h6 {
+    color: #009688;
+    margin: 10px 0px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.body {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 16px;
+}
+
+.left-body {
+    box-shadow: 0 10px 20px 0 #c8c8c8;
+    width: 32%;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.body-left-body i {
+    padding-right: 16px;
+    color: #009688;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.pic {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+.body-left-body {
+    padding: 0px 16px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 16px;
+}
+
+.box90 {
+    background-color: #009688;
+    width: 90%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.box80 {
+    background-color: #009688;
+    width: 80%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.box75 {
+    background-color: #009688;
+    width: 75%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.box50 {
+    background-color: #009688;
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.box100 {
+    background-color: #009688;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
+    height: 24px;
+}
+
+.box60 {
+    background-color: #009688;
+    width: 60%;
+    text-align: center;
+    border-radius: 16px;
+    height: 24px;
+}
+
+.box25 {
+    background-color: #009688;
+    width: 25%;
+    text-align: center;
+    border-radius: 16px;
+    height: 24px;
+}
+
+.right-body {
+    width: 66%;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+}
+
+.head,
+.end {
+    box-shadow: 0 6px 20px 0 #c8c8c8;
+    background-color: white;
+    height: 50%;
+}
+
+.head {
+    margin-bottom: 16px;
+    padding: 0px 16px;
+}
+
+.end {
+    padding: 0px 16px;
+}
+
+.right-body i {
+    color: #009688;
+    margin-right: 15px;
+}
+
+.head div,
+.end div {
+    padding: 0px 16px;
+}
+
+span {
+    background-color: #009688;
+    color: white;
+    padding: 0px 8px;
+}
+
+.footer {
+    color: white;
+    background-color: #009688;
+    text-align: center;
+    padding: 0px 16px;
+    margin-top: 16px;
+
+}
+@media only screen and (max-width:600px ) {
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-body, .right-body{
+        width: 100%;
+        padding: 0px 8px #f1f1f1;
+    }
+
+}
