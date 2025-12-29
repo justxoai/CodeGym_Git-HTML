@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Money Exercise</title>
+</head>
+<style>
+    body{
+        width: 100%;
+    }
+    button{
+        color: white;
+        background-color: blueviolet;
+        border: 1px solid cyan;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    tr, th{
+        margin: 10px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>
+                <b>Amount</b>
+            </th>
+            <th>
+                <b>From Curency</b>
+            </th>
+            <th>
+                <b>To Curency</b>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="number" placeholder="Amount" id="amount">
+            </th>
+            <th>
+                <select name="" id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </th>
+            <th>
+                <select name="" id="to">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </th>
+        </tr>
+    </table>
+    <br>
+    <button onclick="changeMoney()">Convert Money</button>
+    <br>
+    <p id="result"></p>
+
+</body>
+<script src="moneychange.js"></script>
+
+</html>
