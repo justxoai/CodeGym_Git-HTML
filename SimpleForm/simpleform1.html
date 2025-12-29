@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở thích của bạn</title>
+</head>
+<style>
+    body {
+        background-color: cyan;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .form {
+        background-color: white;
+        border: 1px solid #ccc;
+        width: 450px;
+    }
+
+    .header {
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    table {
+        width: 100%;
+        padding: 10px;
+        border-spacing: 5px;
+    }
+
+    label {
+        color: #ff4500;
+    }
+
+    .button {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    button {
+        padding: 8px;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <div class="header">Sở thích của bạn</div>
+        <form>
+            <table>
+                <tr>
+                    <td>Your name</td>
+                    <td colspan="3">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td colspan="3">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox">
+                        <label> Thể thao</label>
+                        <br>
+                        <input type="checkbox">
+                        <label> Lướt web</label>
+                        <br>
+                        <input type="checkbox">
+                        <label> Du lịch</label>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                        <label> Âm nhạc</label>
+                        <br>
+                        <input type="checkbox">
+                        <label> Chơi game</label>
+                    </td>
+                    <td>
+                        <input type="checkbox"><label> Đọc sách</label>
+                        <br>
+                        <input type="checkbox"><label> Điện ảnh</label>
+                    </td>
+                </tr>
+            </table>
+            <div class="button">
+                <button>Submit Form</button>
+                <button>Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
