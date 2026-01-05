@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .calculator {
+        border: 8px solid black;
+        padding: 15px;
+        width: 320px;
+    }
+
+    .display {
+        width: 93%;
+        height: 50px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+        background: white;
+        border: 3px solid #ccc;
+        color: blue;
+    }
+
+    button:hover {
+        background: #eee;
+    }
+</style>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+
+        <div class="buttons">
+            <button onclick="press1()">1</button>
+            <button onclick="press2()">2</button>
+            <button onclick="press3()">3</button>
+            <button onclick="pressPlus()">+</button>
+
+            <button onclick="press4()">4</button>
+            <button onclick="press5()">5</button>
+            <button onclick="press6()">6</button>
+            <button onclick="pressMinus()">-</button>
+
+            <button onclick="press7()">7</button>
+            <button onclick="press8()">8</button>
+            <button onclick="press9()">9</button>
+            <button onclick="pressMul()">x</button>
+
+            <button onclick="clearC()">C</button>
+            <button onclick="press0()">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="pressDivide()">/</button>
+        </div>
+    </div>
+
+</body>
+<script src="simplecalculator.js"></script>
+
+</html>
