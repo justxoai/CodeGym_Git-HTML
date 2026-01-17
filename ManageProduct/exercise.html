@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Producy Exercise</title>
+</head>
+<style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+<body onload="">
+    <h2>Add New Product</h2>
+
+    <input type="text" id="productName" placeholder="New Product">
+    <button onclick="addProduct()">Add</button>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="productList">
+        </tbody>
+    </table>
+
+</body>
+<script src="exercise.js"></script>
+
+</html>
