@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://james.codegym.vn/pluginfile.php/1/theme_remui/faviconurl/1737014283/icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="leftHeader">
+            <div class="pageIcon">
+                <img src="https://james.codegym.vn/pluginfile.php/1/theme_remui/logomini/1737014283/icon-small.png"
+                    alt="">
+                <b>CodeGym Education</b>
+            </div>
+            <div class="pageDashboard">
+                DashBoard
+            </div>
+            <div class="pageStudent">
+                Students
+            </div>
+            <div class="pageClasses">
+                Classes
+            </div>
+        </div>
+        <div class="rightHeader">
+            <div class="pageSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search students...">
+            </div>
+            <div class="pageNotification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="pageSetting">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="pageUser">
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="middleContent">
+        <div class="bodyBanner">
+            <h1>Student Management</h1>
+            <p>Manage, register and monitor student academic profiles.</p>
+        </div>
+        <div class="bodyContent">
+            <div class="leftBodyContent">
+                <h3>Add New Student</h3>
+                <p id="secondText">Fill in the details below to register a new student.</p>
+                <br>
+                <hr>
+                <p id="labelText">Student ID</p>
+                <input type="text" name="" id="idInput" placeholder="e.g 22BI001">
+                <p id="labelText">Full Name</p>
+                <input type="text" name="" id="nameInput" placeholder="Enter Student's full name">
+                <p id="labelText">Date of Birth</p>
+                <input type="date" name="" id="dobInput" placeholder="dd/mm/yyyy">
+                <p id="labelText">Gender</p>
+                <select name="Gender" id="genderInput">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p id="labelText">Major</p>
+                <input type="text" name="" id="classInput" placeholder="e.g ICT">
+                <p id="labelText">Image</p>
+                <input type="text" name="" id="imageInput" placeholder="">
+                <div class="buttonBodyContent">
+                    <button onclick="saveStudent()" id="saveButton"><i class="fa-regular fa-floppy-disk"></i> Register Student</button>
+                </div>
+            </div>
+            <div class="rightBodyContent">
+                <h3>Display Student Information</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Date of Birth</th>
+                            <th>Gender</th>
+                            <th>Major</th>
+                            <th>Student Image</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentContent"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/student.js"></script>
+<script src="js/index.js"></script>
+
+</html>
