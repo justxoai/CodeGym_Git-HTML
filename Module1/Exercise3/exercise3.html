@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+</head>
+<style>
+    input {
+        width: 300px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    thead {
+        background-color: #fafbfb;
+        color: black;
+    }
+
+    th {
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+</style>
+
+<body>
+    <h2>Quản lý sách</h2>
+
+    <p>Nhập ID sách:</p>
+    <input type="text" name="" id="idInput">
+
+    <p>Nhập tên sách:</p>
+    <input type="text" name="" id="nameInput">
+
+    <p>Nhập năm xuất bản sách:</p>
+    <input type="text" name="" id="yearInput">
+
+    <p>Nhập số lượng sách:</p>
+    <input type="number" name="" id="quantityInput">
+
+    <br><br>
+    <button onclick="saveBook()">Lưu sách</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã số sách</th>
+                <th>Tên sách</th>
+                <th>Năm xuất bản</th>
+                <th>Số quyển</th>
+                <th>Tình trạng</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="bookContent"></tbody>
+    </table>
+
+</body>
+<script src="book.js"></script>
+<script src="exercise3.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+</head>
+<style>
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+p {
+    padding: 12px;
+}
+</style>
+<body>
+
+    <h2>Đề bài</h2>
+    <p>
+        Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=50). <br>
+            Hiển thị ra màn hình trung bình cộng các số lẻ ở vị trí chẵn. <br>
+            Ví dụ: [1,2,3,4,6,7]. Kết quả sau khi thực hiện là: (1+3)/2 = 2
+    </p>
+
+    <span>Nhập giá trị n phần tử cho mảng:</span><br><br>
+    <button onclick="inputN()">Nhập phần tử n</button>
+    <p id="n_value"></p>
+
+    <span>Nhập các giá trị trong mảng:</span><br><br>
+    <button onclick="inputArray()">Nhập giá trị</button>
+    <p id="input_array"></p>
+
+    <span>Hiển thị ra mảng:</span><br><br>
+    <button onclick="showArray()">Hiển thị mảng</button>
+    <p id="show_array"></p>
+
+    <span>Hiển thị trung bình cộng của các số lẻ ở vị trí chẵn:</span><br><br>
+    <button onclick="showResult()">Hiển thị kết quả</button>
+    <p id="show_result"></p>
+
+</body>
+<script src="exercise1.js"></script>
+
+</html>
