@@ -17,7 +17,7 @@ jobs:
           username: aht-admin
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 222
-          debug: true
+          # debug: true
           script: |
             cd /var/www/myapp
 
